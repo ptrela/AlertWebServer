@@ -2,7 +2,6 @@ require 'socket'
 require './request_parser'
 require './response'
 require './response'
-require 'byebug'
 
 server = TCPServer.new('localhost', 2001)
 
@@ -14,7 +13,6 @@ def handle_connection(client)
   response = Response.new(request).run
 
   client.write(response)
-
   client.close
 end
 
