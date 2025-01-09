@@ -1,6 +1,6 @@
 require 'socket'
 require './request_parser'
-require './response_parser'
+require './response'
 require './response'
 require 'byebug'
 
@@ -11,7 +11,7 @@ def handle_connection(client)
 
   request = client.readpartial(2048)
   request = RequestParser.new(request).run
-  response = ResponseParser.new(request).run
+  response = Response.new(request).run
 
   client.write(response)
 
