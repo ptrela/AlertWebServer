@@ -26,5 +26,3 @@ class AlertWebServer
     client.close
   end
 end
-
-AlertWebServer.new.run
