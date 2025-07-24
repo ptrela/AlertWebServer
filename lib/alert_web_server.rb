@@ -1,6 +1,6 @@
 require 'socket'
-require './request_parser'
-require './response'
+require File.join(File.dirname(__FILE__), "request_parser")
+require File.join(File.dirname(__FILE__), "response")
 
 class AlertWebServer
   def run

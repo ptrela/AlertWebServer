@@ -1,11 +1,15 @@
 Gem::Specification.new do |s|
-  s.name        = "Alert Web Server"
+  s.name        = "alert_web_server"
   s.version     = "0.0.1"
-  s.summary     = "AWS hehe"
-  s.description = "Simple Ruby Web Server"
+  s.summary     = "Alert Web Server"
+  s.description = "AWS hehe - Simple Ruby Web Server"
   s.authors     = ["Pawel Trela"]
   s.email       = "paweltrelapro@gmail.com"
-  s.files       = ["lib/alert_web_server.rb"]
+  s.files       = %w[
+    lib/alert_web_server.rb
+    lib/request_parser.rb
+    lib/response.rb
+  ]
   s.homepage    =
     "https://rubygems.org/gems/alert_web_server"
   s.license       = "MIT"
