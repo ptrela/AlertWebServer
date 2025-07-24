@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'alert_web_server'
+
+AlertWebServer.new.run
